@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/calculate.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrap1">
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <div class="img">
+                        <a href="./index.html"><img src="./image/logo.png" alt="" width="70px"></a>
+                        <h2><a href="./index.html">Shubhanshu<br>calculator</a></h2>
+                    </div>
+                </div>
+                <div class="col6 col-t-2 col-m-1">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <div class="toggle">
+                        <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrap2">
+        <div class="container">
+            <div class="row">
+                <div class="col12">
+                    <h1>Calculator</h1>
+                        <div class="calculator">
+                            <form action="" name="form">
+                        <div class="box">
+                        <div class="inp">
+                            <input type="text" placeholder="0" name="input" id="input">
+                        </div>
+                        <div class="btns">
+                            <div class="butn">
+                                <input type="button" name="b7" value="7" onclick="func(b7.value)">
+                                <input type="button" name="b8" value="8" onclick="func(b8.value)">
+                                <input type="button" name="b9" value="9" onclick="func(b9.value)">
+                                <input type="button" name="bplus" value="+" onclick="func(bplus.value)">
+                            </div>
+                            <div class="butn">
+                                <input type="button" name="b4" value="4" onclick="func(b4.value)">
+                                <input type="button" name="b5" value="5" onclick="func(b5.value)">
+                                <input type="button" name="b6" value="6" onclick="func(b6.value)">
+                                <input type="button" name="bminus" value="-" onclick="func(bminus.value)">
+                            </div>
+                            <div class="butn">
+                                <input type="button" name="b1" value="1" onclick="func(b1.value)">
+                                <input type="button" name="b2" value="2" onclick="func(b2.value)">
+                                <input type="button" name="b3" value="3" onclick="func(b3.value)">
+                                <input type="button"  name="bmultiply" value="*" onclick="func(bmultiply.value)">
+                            </div>
+                            <div class="butn">
+                                <input type="button" name="b0" value="0" onclick="func(b0.value)">
+                                <input type="button" name="bdot" value="." onclick="func(bdot.value)">
+                                <input type="button" name="bdivide" value="/" onclick="func(bdivide.value)">
+                                <input type="button" name="bisequalto" value="=" onclick="input.value=eval(input.value)">
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="wrap3">
+        <div class="container">
+            <div class="row">
+                <div class="col12">
+                    <p class="footer">All Rights Reserved & Copyright &copy; By 2024 <a href="./index.html">Shubhanshu Kumar Srivastava</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function func(result) {
+            form.input.value = form.input.value + result;
+        }
+
+        let toggle = ()=>{
+            if(document.querySelector("ul").style.left=="100%"){
+                document.querySelector("ul").style.left=0;
+            }
+            else{
+                document.querySelector("ul").style.left="100%";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/calculate.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrap1">
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <div class="img">
+                        <a href="./index.html"><img src="./image/logo.png" alt="" width="70px"></a>
+                        <h2><a href="./index.html">Shubhanshu<br>calculator</a></h2>
+                    </div>
+                </div>
+                <div class="col6 col-t-2 col-m-1">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <div class="toggle">
+                        <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="wrap4">
+    <div class="container">
+        <div class="row">
+            <div class="col12">
+                <h1>Contact</h1>
+                <p class="para"><a href="tel:+917645931347">Contact Number : 7645931347</a></p>
+                <p class="para"><a href="mailto:shubhanshussm1402@gmail.com">Email Id : shubhanshussm1402@gmail.com</a></p>
+                <p class="para"><a href="https://www.linkedin.com/in/shubhanshu-kumar-srivastava-3b304b238">LinkdIn : linkedin/shubhanshu-srivastava</a></p>
+                <p class="para"><a href="https://github.com/shubhanshukrssm10">GitHub : https://github/shubhanshukrssm10</a></p>
+                <p class="para mb"><a href="https://shubhanshu-portfolio-mern.netlify.app/">Portfolio : shubhanshu-portfolio.netlify.app</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col12">
+                <h2>Message Me</h2>
+                <form action="">
+                    <input type="text" placeholder="Name" class="inpu">
+                    <input type="email" placeholder="Email" class="inpu">
+                    <input type="text" placeholder="Subject" class="inpu">
+                    <textarea rows="8" placeholder="Message.." class="texa"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrap3">
+    <div class="container">
+        <div class="row">
+            <div class="col12">
+                <p class="footer">All Rights Reserved & Copyright &copy; By 2024 <a href="./index.html">Shubhanshu Kumar Srivastava</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let toggle = ()=>{
+        if(document.querySelector("ul").style.left=="100%"){
+            document.querySelector("ul").style.left=0;
+        }
+        else{
+            document.querySelector("ul").style.left="100%";
+        }
+    }
+</script>
+</body>
+</html>
